@@ -3,21 +3,21 @@
 A [Markov chain](https://www.khanacademy.org/computing/computer-science/informationtheory/moderninfotheory/v/markov_chains) based tech-nonsense generator.
 
 #### Examples
-- embrace feature-rich clustering
-- target open-source supervised learning
-- repurpose peer-to-peer computing
-- embrace bleeding-edge metrics
-- brute-force open-source disk encryption
-- reinvent feature-rich recursive neural networks
-- elegant turn-key hashing
-- massive neural networks
-- cultivate back-end cryptocurrency
-- monetize mission-critical bot-nets
-- unleash plug-and-play paradigms
-- brute-force exhaustive hyper-cloud
-- byzantine supervised learning
-- feature-rich recursive neural networks
-- target user-centric paradigms
+- Embrace feature-rich clustering.
+- Target open-source supervised learning.
+- Repurpose peer-to-peer computing.
+- Embrace bleeding-edge metrics.
+- Brute-force open-source disk encryption.
+- Reinvent feature-rich recursive neural networks.
+- Elegant turn-key hashing.
+- Massive neural networks.
+- Cultivate back-end cryptocurrency.
+- Monetize mission-critical bot-nets.
+- Unleash plug-and-play paradigms.
+- Brute-force exhaustive hyper-cloud.
+- Byzantine supervised learning.
+- Feature-rich recursive neural networks.
+- Target user-centric paradigms.
 
 ## Algorithm
 

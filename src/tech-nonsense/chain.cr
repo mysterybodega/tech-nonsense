@@ -10,9 +10,7 @@ class TechNonsense::Chain
     @nouns : Array(String),
     @verbs : Array(String)
   )
-    @corpus = 100_000.times.flat_map do
-      compose.split(" ")
-    end.to_a
+    @corpus = 100_000.times.flat_map { sentence }.to_a
     @chain = Markov::Chain(String).new(
       sample: @corpus,
       seed: @corpus.sample
@@ -27,18 +25,16 @@ class TechNonsense::Chain
       words << word
       break if word.ends_with?(".")
     end
-    words.size > 2 ? words.join(" ").sub(".", "") : self.next
+    words.size > 2 ? words.join(" ") : self.next
   end
 
-  private def compose
-    words =
-      case rand(2)
-      when 0
-        [verb, adjective, noun]
-      else
-        [adjective, noun]
-      end
-    words.join(" ") + "."
+  private def sentence
+    case rand(2)
+    when 0
+      [verb.capitalize, adjective, noun + "."]
+    else
+      [adjective.capitalize, noun + "."]
+    end
   end
 
   private def verb
