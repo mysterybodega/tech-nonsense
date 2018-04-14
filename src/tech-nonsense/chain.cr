@@ -1,5 +1,4 @@
 require "markov"
-require "yaml"
 
 class TechNonsense::Chain
   @chain : Markov::Chain(String)
