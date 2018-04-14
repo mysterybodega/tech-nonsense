@@ -1,3 +1,7 @@
+<h3 align="center">
+  <img src="/images/logo.gif">
+</h3>
+
 # tech-nonsense
 
 A [Markov chain](https://www.khanacademy.org/computing/computer-science/informationtheory/moderninfotheory/v/markov_chains) based tech-nonsense generator.
