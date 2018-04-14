@@ -27,7 +27,7 @@ class TechNonsense::Chain
       words << word
       break if word.ends_with?(".")
     end
-    words.size > 2 ? words.join(" ") : self.next
+    words.size > 2 ? words.join(" ").sub(".", "") : self.next
   end
 
   private def compose
