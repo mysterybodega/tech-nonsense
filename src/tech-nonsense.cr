@@ -1,23 +1,9 @@
-require "colorize"
 require "./tech-nonsense/*"
 
-def error(message : String)
-  puts(message.colorize.red)
-  exit(1)
-end
+include TechNonsense::Utils
 
-config_file =
-  begin
-    ARGV.first
-  rescue
-    error("Missing config file argument.")
-  end
-config_text =
-  begin
-    File.read(config_file)
-  rescue
-    error("Config file does not exist: #{config_file}.")
-  end
+config_file = ARGV.first rescue error("Missing config argument.")
+config_text = File.read(config_file) rescue error("Config does not exist: #{config_file}.")
 
 config = TechNonsense::Config.from_yaml(config_text)
 chain = TechNonsense::Chain.new(
