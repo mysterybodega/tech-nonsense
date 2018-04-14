@@ -2,7 +2,6 @@ require "markov"
 require "yaml"
 
 class TechNonsense::Chain
-  @corpus : Array(String)
   @chain : Markov::Chain(String)
 
   def initialize(
@@ -10,12 +9,8 @@ class TechNonsense::Chain
     @nouns : Array(String),
     @verbs : Array(String)
   )
-    @corpus = 100_000.times.flat_map { sentence }.to_a
-    @chain = Markov::Chain(String).new(
-      sample: @corpus,
-      seed: @corpus.sample
-    )
-    @chain.on_dead_end { @corpus.sample }
+    sample = 100_000.times.flat_map { sentence }.to_a
+    @chain = Markov::Chain(String).new(sample: sample, seed: sample.first)
   end
 
   def next
@@ -25,15 +20,15 @@ class TechNonsense::Chain
       words << word
       break if word.ends_with?(".")
     end
-    words.size > 2 ? words.join(" ") : self.next
+    words.size > 2 ? words.join(" ").rchop(".") : self.next
   end
 
   private def sentence
     case rand(2)
     when 0
-      [verb.capitalize, adjective, noun + "."]
+      [verb, adjective, noun + "."]
     else
-      [adjective.capitalize, noun + "."]
+      [adjective, noun + "."]
     end
   end
 
