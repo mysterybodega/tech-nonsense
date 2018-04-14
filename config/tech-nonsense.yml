@@ -1,0 +1,150 @@
+total: 25
+verbs:
+ - architect
+ - benchmark
+ - brute-force
+ - cultivate
+ - deliver
+ - deploy
+ - disrupt
+ - drive
+ - elegant
+ - embrace
+ - empower
+ - enable
+ - engage
+ - engineer
+ - enhance
+ - envisioneer
+ - evolve
+ - expedite
+ - exploit
+ - extend
+ - facilitate
+ - gamify
+ - generate
+ - grow
+ - harness
+ - ideate
+ - implement
+ - incentivize
+ - incubate
+ - innovate
+ - integrate
+ - iterate
+ - leverage
+ - maximize
+ - monetize
+ - optimize
+ - orchestrate
+ - productize
+ - redefine
+ - reinvent
+ - repurpose
+ - revolutionize
+ - scale
+ - strategize
+ - streamline
+ - synergize
+ - target
+ - transform
+ - unleash
+ - utilize
+
+adjectives:
+  - back-end
+  - bleeding-edge
+  - byzantine
+  - collaborative
+  - cross-platform
+  - cutting-edge
+  - distributed
+  - dynamic
+  - efficient
+  - encrypted
+  - end-to-end
+  - enterprise
+  - exhaustive
+  - extensible
+  - fault-tolerant
+  - frictionless
+  - front-end
+  - functional
+  - geo-blocking
+  - global
+  - leading-edge
+  - massive
+  - mission-critical
+  - multiplayer
+  - next-generation
+  - one-to-one
+  - open-source
+  - out-of-the-box
+  - peer-to-peer
+  - plug-and-play
+  - real-time
+  - revolutionary
+  - feature-rich
+  - robust
+  - scalable
+  - seamless
+  - service-oriented
+  - turn-key
+  - user-centric
+  - viral
+  - virtualized
+  - wireless
+  - world-class
+
+nouns:
+  - algebraic datatypes
+  - algorithms
+  - applications
+  - architectures
+  - artificial intelligence
+  - big-data
+  - blockchains
+  - bot-nets
+  - chat-bots
+  - classification
+  - clustering
+  - compute engine
+  - computing
+  - cryptocurrency
+  - data center
+  - data-mining
+  - deep-learning
+  - disk encryption
+  - hashing
+  - hyper-cloud
+  - infrastructures
+  - initiatives
+  - interfaces
+  - machine-learning
+  - methodologies
+  - metrics
+  - microservice
+  - mindshare
+  - models
+  - natural language processing
+  - networks
+  - neural networks
+  - paradigms
+  - partnerships
+  - platforms
+  - portals
+  - recursive neural networks
+  - regressions
+  - relationships
+  - schemas
+  - solutions
+  - supervised learning
+  - supply-chains
+  - support vector machines
+  - systems
+  - technologies
+  - unsupervised learning
+  - users
+  - virtual reality
+  - vortals
+  - web services

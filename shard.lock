@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  markov:
+    github: mccallofthewild/markov
+    version: 0.1.1
+

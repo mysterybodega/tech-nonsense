@@ -1,0 +1,17 @@
+name: tech-nonsense
+version: 0.1.0
+
+authors:
+  - hachibu <raymondsohn@gmail.com>
+
+targets:
+  markov:
+    main: src/tech-nonsense.cr
+
+crystal: 0.24.2
+
+license: MIT
+
+dependencies:
+  markov:
+    github: mccallofthewild/markov
