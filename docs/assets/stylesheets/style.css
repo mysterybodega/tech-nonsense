@@ -18,7 +18,7 @@ body {
 
 .nav {
   align-items: flex-end;
-  bottom: 25px;
+  bottom: 15px;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -28,7 +28,7 @@ body {
 .nav a {
   color: white;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 30px;
   text-decoration: none;
 }
 
