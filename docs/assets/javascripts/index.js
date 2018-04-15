@@ -26,12 +26,8 @@ function draw() {
       '#AAAAAA',
       '#DDDDDD'
     ];
-    var fontWeights = [400, 600];
-    var fontStyles = ['normal', 'italic'];
-    var fontCss = {
-      'font-weight': _.sample(fontWeights),
-      'font-style': _.sample(fontStyles)
-    };
+    var fontFamilies = ["'IBM Plex Mono', monospace;"];
+    var fontFamily = _.sample(fontFamilies);
 
     _.each(words, function (word) {
       colors = _.shuffle(colors);
@@ -39,8 +35,10 @@ function draw() {
       var $word = $('<span>').
         addClass('sentence__word glitch').
         attr('data-text', word).
-        css(fontCss).
-        css('background', colors.pop()).
+        css({
+          'background': colors.pop(),
+          'font-family': fontFamily
+        }).
         text(word);
 
       $words.push($word);
