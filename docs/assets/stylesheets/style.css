@@ -13,6 +13,27 @@ body {
   font-size: 120px;
   justify-content: flex-start;
   padding: 25px;
+  position: relative;
+}
+
+.nav {
+  align-items: flex-end;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 25px;
+}
+
+.nav a {
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: line-through;
 }
 
 .sentence {
