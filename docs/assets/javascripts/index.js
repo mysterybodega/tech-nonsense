@@ -102,7 +102,6 @@ var sentences = [
 ];
 
 var colors = [
-  '#001f3f',
   '#0074D9',
   '#7FDBFF',
   '#39CCCC',
@@ -115,9 +114,7 @@ var colors = [
   '#85144b',
   '#F012BE',
   '#B10DC9',
-  '#111111',
-  '#AAAAAA',
-  '#DDDDDD'
+  '#111111'
 ];
 
 function draw() {
@@ -125,26 +122,32 @@ function draw() {
   var words = _.chain(sentences).sample().split(' ').value();
 
   _.each($sentence.children(), function(child) {
-    $(child).addClass('animated fadeOut');
+    $(child).
+      removeClass('fadeIn flipInX').
+      addClass('fadeOut flipOutX');
   });
 
-  setTimeout(function() {
-    $sentence.empty();
+  _.delay(function() {
+    var $words = [];
     _.each(words, function (word) {
       var $word = $('<span>').
-        attr('class', 'sentence__word glitch').
+        addClass('sentence__word glitch').
         attr('data-text', word).
-        css({
-          'background': _.sample(colors)
-        }).
+        css('background', _.sample(colors)).
         text(word);
-
-      $word.addClass('animated fadeIn flipInX');
-
-      $sentence.append($word);
+      $words.push($word);
     });
-  }, 1000);
+
+    $sentence.empty();
+
+    var n = 500;
+    _.each($words, function($word, i) {
+      _.delay(function() {
+        $sentence.append($word.addClass('animated fadeIn flipInX'));
+      }, i * n);
+    });
+    _.delay(draw, $words.length * n * 2);
+  }, 250);
 }
 
 draw();
-setInterval(function() { draw(); }, 4000);
