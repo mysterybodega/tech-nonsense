@@ -16,7 +16,6 @@ function draw() {
       '#39CCCC',
       '#3D9970',
       '#2ECC40',
-      '#01FF70',
       '#FFDC00',
       '#FF851B',
       '#FF4136',
@@ -29,16 +28,19 @@ function draw() {
     ];
     var fontWeights = [400, 600];
     var fontStyles = ['normal', 'italic'];
+    var fontCss = {
+      'font-weight': _.sample(fontWeights),
+      'font-style': _.sample(fontStyles)
+    };
 
     _.each(words, function (word) {
+      colors = _.shuffle(colors);
+
       var $word = $('<span>').
         addClass('sentence__word glitch').
         attr('data-text', word).
-        css({
-          'background': _.sample(colors),
-          'font-weight': _.sample(fontWeights),
-          'font-style': _.sample(fontStyles)
-        }).
+        css(fontCss).
+        css('background', colors.pop()).
         text(word);
 
       $words.push($word);
