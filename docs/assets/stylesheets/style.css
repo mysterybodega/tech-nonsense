@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 
 * {
   margin: 0;
@@ -9,7 +10,6 @@ body {
   align-items: center;
   background: black;
   display: flex;
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 120px;
   justify-content: flex-start;
   padding: 25px;
@@ -21,6 +21,7 @@ body {
   bottom: 15px;
   display: flex;
   flex-direction: column;
+  font-family: 'IBM Plex Mono', monospace;
   position: fixed;
   right: 25px;
 }
