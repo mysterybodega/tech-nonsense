@@ -102,6 +102,7 @@ var sentences = [
 ];
 
 var colors = [
+  '#001f3f',
   '#0074D9',
   '#7FDBFF',
   '#39CCCC',
@@ -114,7 +115,9 @@ var colors = [
   '#85144b',
   '#F012BE',
   '#B10DC9',
-  '#111111'
+  '#111111',
+  '#AAAAAA',
+  '#DDDDDD'
 ];
 
 function draw() {
