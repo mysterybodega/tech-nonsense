@@ -132,11 +132,17 @@ function draw() {
 
   _.delay(function() {
     var $words = [];
+    var fontWeights = [400, 600];
+    var fontStyles = ['normal', 'italic'];
     _.each(words, function (word) {
       var $word = $('<span>').
         addClass('sentence__word glitch').
         attr('data-text', word).
-        css('background', _.sample(colors)).
+        css({
+          'background': _.sample(colors),
+          'font-weight': _.sample(fontWeights),
+          'font-style': _.sample(fontStyles)
+        }).
         text(word);
       $words.push($word);
     });
