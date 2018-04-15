@@ -11,7 +11,6 @@ function draw() {
   _.delay(function() {
     var $words = [];
     var colors = [
-      '#001f3f',
       '#0074D9',
       '#7FDBFF',
       '#39CCCC',
