@@ -1,19 +1,3 @@
-var colors = [
-  '#0074D9',
-  '#7FDBFF',
-  '#39CCCC',
-  '#3D9970',
-  '#2ECC40',
-  '#FFDC00',
-  '#FF851B',
-  '#FF4136',
-  '#85144b',
-  '#F012BE',
-  '#B10DC9',
-  '#111111',
-  '#AAAAAA',
-  '#DDDDDD'
-];
 var fonts = [
   "'IBM Plex Mono', monospace",
   "'Libre Baskerville', serif"
@@ -30,14 +14,30 @@ function draw() {
 
   _.delay(function() {
     var $words = [];
+    var colors = [
+      '#0074D9',
+      '#7FDBFF',
+      '#39CCCC',
+      '#3D9970',
+      '#2ECC40',
+      '#FFDC00',
+      '#FF851B',
+      '#FF4136',
+      '#85144b',
+      '#F012BE',
+      '#B10DC9',
+      '#111111',
+      '#AAAAAA',
+      '#DDDDDD'
+    ];
 
     _.each(words, function (word) {
       colors = _.shuffle(colors);
-
+      var background = colors.pop();
       var $word = $('<span>').
         addClass('sentence__word glitch').
         attr('data-text', word).
-        css('background', colors.pop()).
+        css('background', background).
         text(word);
 
       $words.push($word);
